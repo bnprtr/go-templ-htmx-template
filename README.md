@@ -1,5 +1,6 @@
 # Go + Templ + HTMX + Tailwind CSS Template
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/_U7eCH?referralCode=BUOfF1)
 ## 🚀 Features
 * [Go](https://golang.org/)
 * [Echo](https://echo.labstack.com/) - Web framework
@@ -21,5 +22,14 @@ Development mode will watch for changes in the source code and restart the serve
 It will also watch for changes in the static files and recompile them automatically.
 ```shell
 task dev
+```
+
+## 📦 Structure
+
+
+```
+static/: static files that are are served directly by the application server at /static/*
+templates/: Reusable Templ components
+views/: Views and routes for views
 ```
 
