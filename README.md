@@ -1,0 +1,1 @@
+# go-templ-htmx-template
