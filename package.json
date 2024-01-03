@@ -1,0 +1,17 @@
+{
+  "name": "htmx-template",
+  "version": "1.0.0",
+  "description": "## 🚀 Features * [Go](https://golang.org/) * [Echo](https://echo.labstack.com/) - Web framework * [Templ](https://templ.guide) - Templating engine * [HTMX](https://htmx.org/) - Dynamic Sites without Javascript * [Tailwind CSS](https://tailwindcss.com/) - CSS framework * [Taskfile](https://taskfile.dev/) - Task runner alternative to Makefile * [Air](https://github.com/cosmtrek/air) - Live reload for Go apps",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  }
+}

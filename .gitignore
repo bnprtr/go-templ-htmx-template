@@ -15,7 +15,16 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
 
 # Go workspace file
 go.work
+
+# node modules
+node_modules
+
+# air build files
+tmp
+
+# task file temporary files
+.task

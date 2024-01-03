@@ -1,0 +1,9 @@
+package views
+
+templ Index() {
+	<div class="m-2">
+		<div class="font-mono h1 text-white text-4xl font-bold">Index</div>
+		<div id="ping" class="text-indigo-300 m-2"></div>
+		<button type="button" class="bg-emerald-700 w-24 p-2 rounded-xl shadow-xl text-white font-bold" hx-trigger="click" hx-post="/ping" hx-target="#ping" hx-swap="innerHTML">Ping</button>
+	</div>
+}

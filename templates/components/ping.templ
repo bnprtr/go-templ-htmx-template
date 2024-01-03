@@ -1,0 +1,19 @@
+package components
+
+var ping bool
+
+templ Ping() {
+	<div>
+		<h3>
+			{ pingText() }
+		</h3>
+	</div>
+}
+
+func pingText() string {
+	ping = !ping
+	if ping {
+		return "pong"
+	}
+	return "ping"
+}

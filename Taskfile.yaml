@@ -1,0 +1,32 @@
+version: "3"
+
+dotenv:
+  - .env
+  - .env.local
+
+env:
+  PORT: 8080
+
+tasks:
+  dev:
+    run: always
+    cmds:
+      - air
+
+  generate:
+    aliases:
+      - gen
+      - g
+    generates:
+      - templates/**/*.go
+      - views/**/*.go
+      - static/**/*.css
+    sources:
+      - templates/**/*.templ
+      - views/**/*.templ
+      - tailwind.config.js
+      - tailwind.css
+    cmds:
+      - npx tailwindcss build -i tailwind.css -o static/style.css
+      - go run github.com/a-h/templ/cmd/templ@latest generate
+      - go generate ./...
