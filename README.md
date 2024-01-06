@@ -47,6 +47,9 @@ task container container_name=my-app container_tag=test
 Deploying to Railway doesn't require any special configuration. You can just fork this repository and configure Railway to use
 your forked repository. Railway will then automatically build and deploy your main branch on every change. You can click the
 `Deploy to Railway` badge at the top of the README to streamline this process.
+
+**Note**: This template was designed to deploy to Railway in mind but there is nothing prohibiting this template from working
+elsewhere. The binary is just a standard go http server. The Dockerfile should work just about anywhere the runs containers.
 ### Development Mode
 
 Development mode will watch for changes in the source code and restart the server automatically.
