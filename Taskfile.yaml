@@ -7,11 +7,27 @@ dotenv:
 env:
   PORT: 8080
 
+vars:
+  container_name: app
+  container_tag: latest
+
 tasks:
   dev:
     run: always
     cmds:
       - air
+
+  build:
+    deps:
+      - task: generate
+    cmds:
+      - CGO_ENABLED=0 go build -o build/server main.go
+
+  container:
+    deps:
+      - task: generate
+    cmds:
+      - docker build -t {{.container_name}}:{{.container_tag}} .
 
   generate:
     aliases:

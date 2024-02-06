@@ -7,6 +7,7 @@
 *.dll
 *.so
 *.dylib
+build
 
 # Test binary, built with `go test -c`
 *.test
@@ -28,3 +29,4 @@ tmp
 
 # task file temporary files
 .task
+
